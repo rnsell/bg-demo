@@ -24,8 +24,8 @@ export const LoadingBoardGameTable = () => {
     <>
       <Row>
         <Divider />
-        {fakeRows.map(() => {
-          return <BoardGameRowSkeleton />;
+        {fakeRows.map((__, index) => {
+          return <BoardGameRowSkeleton key={index} />;
         })}
       </Row>
     </>
