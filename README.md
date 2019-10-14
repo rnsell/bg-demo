@@ -1,3 +1,11 @@
+# Description
+
+This application displays a list of board games fetched dynamically from a lambda endpoint I wrote for a side project. The endpoint has a list of board games and youtube ids so people can watch and learn how to play a particular table top game. This endpoint was chosen as it doesn't have any authentication and I am familiar with the data. This data is then displayed into a table that is paginated.
+
+The total set of board games is < 200 but to simulate a paginated api, the application reduntantly just refetches the data on page change. In order to guarantee that the loading component renders, a delay was added to fetching the data. This would not exist in real life.
+
+As with all node apps, run `npm install` after cloning the app. Everything uses the standard create react app scripts. Create react app was used for speed and because I've recommended it when interviewing prospective canidates.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
