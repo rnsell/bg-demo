@@ -1,15 +1,3 @@
-import { get } from "lodash";
-
-export const convertArrayToDictionary = (propKey, anArray) => {
-  const dictionaryValues = anArray.map(arrayData => {
-    const key = get(arrayData, propKey);
-
-    return [key, arrayData];
-  });
-
-  return new Map(dictionaryValues);
-};
-
 export const wait = timeInMs => {
   return new Promise(resolve => {
     setTimeout(resolve, timeInMs);
